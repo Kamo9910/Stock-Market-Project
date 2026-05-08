@@ -1,14 +1,15 @@
+import os
 import requests
 from twilio.rest import Client
 
 STOCK_NAME = "TSLA"
 COMPANY_NAME = "Tesla Inc"
-News_Api_key = ''
+News_Api_key = os.environ.get("News_Api_key")
 
 OWNM_Endpoint = "https://api.openweathermap.org/data/2.5/forecast"
-api_key = ""
-account_sid = ""
-auth_token = ""
+api_key =  os.environ.get("api_key")
+account_sid = os.environ.get("account_sid")
+auth_token = os.environ.get("auth_token")
 
 parameter = {
     "function":"TIME_SERIES_DAILY",
@@ -59,9 +60,9 @@ if abs(diff_percent) >1:
 
     for articles in formated_articles :
         message = client.messages.create(
-            from_="whatsapp:",
+            from_=f"whatsapp:{os.environ.get("VITUAL_NO")}",
             body=articles,
-            to="whatsapp:"
+            to=f"whatsapp:{os.environ.get("OWM_API_KEY")}"
         )
 
         print(message.status)
