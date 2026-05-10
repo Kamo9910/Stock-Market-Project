@@ -66,3 +66,4 @@ if abs(diff_percent) >1:
         )
 
         print(message.status)
+print(OWN_API_KEY)
