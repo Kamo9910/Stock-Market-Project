@@ -4,12 +4,12 @@ from twilio.rest import Client
 
 STOCK_NAME = "TSLA"
 COMPANY_NAME = "Tesla Inc"
-News_Api_key = os.environ.get("News_Api_key")
+News_Api_key = os.environ.get("NEWS_API_KEY")
 
 OWNM_Endpoint = "https://api.openweathermap.org/data/2.5/forecast"
-api_key =  os.environ.get("api_key")
-account_sid = os.environ.get("account_sid")
-auth_token = os.environ.get("auth_token")
+api_key =  os.environ.get("API_KEY")
+account_sid = os.environ.get("ACCOUNT_SID")
+auth_token = os.environ.get("AUTH_TOKEN")
 
 parameter = {
     "function":"TIME_SERIES_DAILY",
