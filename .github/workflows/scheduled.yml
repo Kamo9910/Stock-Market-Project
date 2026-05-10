@@ -32,6 +32,6 @@ jobs:
           ACCOUNT_SID: ${{ secrets.ACCOUNT_SID }}
           AUTH_TOKEN: ${{ secrets.AUTH_TOKEN }}
           VITUAL_NO: ${{ secrets.VITUAL_NO }}
-          OWN_API_KEY: ${{ secrets.OWN_API_KEY }}
+          TO_NUMBER: ${{ secrets.TO_NUMBER }}
          
         run: python main.py
