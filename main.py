@@ -49,7 +49,7 @@ if abs(diff_percent) >1:
         "qInTitle": COMPANY_NAME
     }
     news_response = requests.get(NEWS_ENDPOINT,params=news_params)
-    articles =  news_response.json()['articles']
+    articles =  news_response.json()["articles"]
 
     three_articles = articles[:3]
     print(three_articles)
