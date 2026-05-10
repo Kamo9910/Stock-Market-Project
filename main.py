@@ -62,7 +62,7 @@ if abs(diff_percent) >1:
         message = client.messages.create(
             from_=f"whatsapp:{os.environ.get("VITUAL_NO")}",
             body=articles,
-            to=f"whatsapp:{os.environ.get("OWM_API_KEY")}"
+            to="whatsapp:+27678210226"
         )
 
         print(message.status)
