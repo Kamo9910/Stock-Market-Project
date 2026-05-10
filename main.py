@@ -60,9 +60,9 @@ if abs(diff_percent) >1:
 
     for articles in formated_articles :
         message = client.messages.create(
-            from_=f"whatsapp:{os.environ.get("VITUAL_NO")}",
+            from_= f"whatsapp:{os.environ.get("VITUAL_NO")}",
             body=articles,
-            to="whatsapp:+27678210226"
+            to= f"whatsapp:{os.environ.get("OWN_API_KEY")}"
         )
 
         print(message.status)
