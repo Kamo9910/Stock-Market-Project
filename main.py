@@ -48,8 +48,8 @@ if abs(diff_percent) >1:
         "apikey": News_Api_key,
         "qInTitle": COMPANY_NAME
     }
-    news_repsonse = requests.get(NEWS_ENDPOINT,params=news_params)
-    articles = news_repsonse.json()['articles']
+    news_response = requests.get(NEWS_ENDPOINT,params=news_params)
+    articles =  news_response.json()['articles']
 
     three_articles = articles[:3]
     print(three_articles)
