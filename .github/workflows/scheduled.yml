@@ -27,7 +27,7 @@ jobs:
 
       - name: Run script
         env:
-          NEWS_API_KEY: ${{ secrets.News_Api_key }}
+          NEWS_API_KEY: ${{ secrets.NEWS_API_KEY }}
           API_KEY: ${{ secrets.API_KEY }}
           ACCOUNT_SID: ${{ secrets.ACCOUNT_SID }}
           AUTH_TOKEN: ${{ secrets.AUTH_TOKEN }}
