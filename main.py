@@ -66,4 +66,3 @@ if abs(diff_percent) >1:
         )
 
         print(message.status)
-print(os.environ.get("OWN_API_KEY"))
